@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_selecione"
+            android:layout_marginTop="20dp"
+            android:text="MATERIAL"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_categoria"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/text_selecione"
+            android:layout_marginTop="30dp"
+            android:layout_height="50dp" />
+
+        <Spinner
+            android:id="@+id/spinner_material"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="textStart"
+            android:textDirection="firstStrong"
+            android:layout_below="@+id/spinner_categoria"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/text_fornecedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="FORNECEDOR"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/spinner_material"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/add_fornecedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_fornecedor"
+            android:ems="8"
+            android:layout_marginStart="20dp"
+            android:textSize="19sp"
+            android:layout_toEndOf="@+id/text_fornecedor"
+            android:inputType="textAutoComplete" />
+
+
+        <Button
+            android:id="@+id/botao_descricao_next"
+            android:layout_width="@dimen/botao_width"
+            android:layout_height="@dimen/botao_height"
+            android:background="@drawable/button_back"
+            android:gravity="center"
+            android:text="Continuar"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
